@@ -79,7 +79,7 @@ if (bmi <= 18.5){
 }else if (bmi >= 30) {
   console.log("Obeso")
 }
-*/
+
 
 //eje 11
 let num = prompt("Ingrese un numero ");
@@ -93,3 +93,102 @@ if ((num > 0 && num % 3 == 0) && (num > 0 && num % 5 == 0)) {
     } else {
         console.log(num)       
 }
+// eje 12
+
+const frase = prompt("Ingresa una frase ");
+var i=0;
+while(i < 10){
+  i = i+1
+  console.log(frase)
+}
+//eje 13
+const frase = prompt("Ingresa una frase ");
+let num = prompt("Ingrese un numero ");
+num =  parseFloat(num);
+while(num > 0){
+  num = num-1
+  console.log(frase)
+}
+
+
+//eje 14
+let num = parseInt(prompt("Escribe un número: "))
+for (let i = 1; i <= num; i++) {
+  console.log(i)
+}
+
+// eje 15
+let num1 = parseInt(prompt("Escriba el número inicial: "))
+let num2 = parseInt(prompt("Escriba el número final: "))
+
+for (let i = num1; i <= num2; i++) {
+  console.log(i)
+}
+
+// eje 16
+var str = prompt("Ingresa un texto ");
+while(str !== "salir"){
+  console.log(str);
+  str = prompt("Ingresa de nuevo un texto ")
+}
+console.log("Hasta pronto!")
+  
+
+// eje 17
+var num
+const random = Math.floor(Math.random() * 2) + 1
+console.log(random)
+num = prompt("trate de adivinar el numero del 1 a 10 ");
+num = parseInt(num);
+while( random != num){
+    console.log("Lo siento, intenta nuevamente!")
+    num = prompt("trate de nuevo de adivinar el numero del 1 a 10 ");
+    num = parseInt(num);
+}
+if(num === random){
+  console.log("Felicitaciones, ese era!")
+} 
+
+ 
+
+// eje 18
+
+var nombres = ["Pedro", "Pablo", "María", "Juan", "Diana"];
+nombres.push(prompt("Ingresa un nombre "));
+nombres[2]=(prompt("Ingresa otro nombre "));
+for (i=0; i < nombres.length; i++){
+  console.log(nombres[i]);
+}
+
+ 
+// ejercicio 19 
+let num = parseInt(prompt("Escriba un número: "))
+let arr =[]
+for (let i = 1; i <= num; i++) {
+  arr.push(i)
+}
+arr.splice(1,1);
+console.log(arr);
+
+//eje 20
+const mat = [
+  ["Pablo", "Maria", "Pedro"],
+  ["Diana", "Juan", "Federico"],
+  ["Roberto", "Daniel", "Sandra"]
+];
+
+for (let i=0; i < mat.length; i++){
+  console.log("Grupo "+[i + 1])
+      for (let j=0; j<mat[i].length; j++){
+    console.log(mat[i][j]);
+  }
+}
+
+// eje 21
+const nums = [1, 23, 5, 8, 40, 12, 2, 67, 24, 9, 39];
+for (let i=0; i < nums.length; i++){
+  if(nums[i] > 10){
+    console.log(nums[i]);
+    }
+}
+*/
