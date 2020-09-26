@@ -191,4 +191,76 @@ for (let i=0; i < nums.length; i++){
     console.log(nums[i]);
     }
 }
+
+// eje 22
+const nums = [1, 0, 1, 1, 1, 0, 0, 1, 0, 1, 1, 0, 0, 1, 0, 1, 0, 1, 1]
+let cont = 0;
+for (let i=0; i < nums.length; i++){
+  if(nums[i] > 0){
+    cont = cont +1
+  }
+}
+console.log("la cantidad de unos son " + cont);
+
+// eje 23
+
+const frase = prompt("Ingresa una frase ");
+console.log(frase.toUpperCase());
+
+// eje 24
+
+let texto = prompt("Ingresa una frase ");
+let cont = 0
+for (let i=0; i < texto.length; i++){
+   if(texto[i] == "a" || texto[i] == "A"){
+     cont =cont +1
+    }
+}
+console.log(`la frase tiene ${cont} caracteres "a"`)
+
+
+// eje 25
+let texto = prompt("Ingresa una frase ");
+texto= texto.toLowerCase();
+texto= texto.replace(/a/g, 4);
+texto= texto.replace(/e/g, 3);
+texto= texto.replace(/i/g, 1);
+texto= texto.replace(/o/g, 0);
+texto= texto.split(" ")
+texto= texto.join("")
+console.log(texto)
+
+
+// eje 26
+let texto = prompt("Ingresa una frase ");
+texto =texto.replace(/(^\w|\s\w)/g, m => m.toUpperCase())
+
+
+// eje 27
+let texto = prompt("Ingresa una frase ");
+texto = texto.split(" ")
+for (let i=0; i < texto.length; i++){
+  console.log(texto[i])
+}
+
+
+// eje 28
+
+
+ 
+let textoUno = prompt('Ingresa una frase')
+let textoDos = prompt('Ingresa una frase')
+let comun = []
+ for (let i=0;i<textoUno.length;i++){
+   for(let j=0;j<textoDos.length; j++){
+     if (textoUno[i]==textoDos[j]){
+       comun.push(textoDos[i])
+     }
+   }
+ }
+ if (comun ==""){
+   console.log("No tiene caracteres en común")
+ } else {
+   console.log(`Los caracteres en común son ${comun}`)
+}
 */
