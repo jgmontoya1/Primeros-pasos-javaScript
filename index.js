@@ -263,4 +263,52 @@ let comun = []
  } else {
    console.log(`Los caracteres en común son ${comun}`)
 }
+
+// eje 29
+
+function suma (num1, num2){
+  return (num1 + num2)
+}
+console.log(suma(1, 2)) 
+console.log(suma(0, 0)) 
+console.log(suma(245, 923))
+
+// eje 30
+function hola(nombre){
+  return `"Hola ${nombre}!" ` 
+}
+console.log(hola("Pedro"))
+
+// eje 31
+
+function bmi(peso, altura){
+  return peso / (altura*altura)
+}
+console.log(bmi(65, 1.8)) // 20.061728395061728
+console.log(bmi(72, 1.6)) // 28.124999999999993
+console.log(bmi(52, 1.75)) //  16.979591836734695
+
+
+//eje 32
+
+function calcularColor(num) {
+  let color;
+  if (num === 1) {
+    color = "negro";
+  } else if (num === 2) {
+    color = "blanco";
+  } else if (num === 3) {
+    color = "azul";
+  } else {
+    color = "verde";
+  }
+
+  return "El color es " + color;
+}
+
+// código de prueba
+console.log(calcularColor(1)) // "El color es negro"
+console.log(calcularColor(2)) // "El color es blanco"
+console.log(calcularColor(3)) // "El color es azul"
+console.log(calcularColor(8)) // "El color es verde"
 */
