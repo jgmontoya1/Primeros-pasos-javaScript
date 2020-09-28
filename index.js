@@ -311,4 +311,33 @@ console.log(calcularColor(1)) // "El color es negro"
 console.log(calcularColor(2)) // "El color es blanco"
 console.log(calcularColor(3)) // "El color es azul"
 console.log(calcularColor(8)) // "El color es verde"
+
+
+// eje 33
+
+const capitalizar = (str)=>{
+  return str =str.replace(/(^\w|\s\w)/g, m => m.toUpperCase())
+} 
+
+console.log(capitalizar("pedro perez")) // "Pedro Perez"
+console.log(capitalizar("make it real")) // "Make it Real"
+
+
+// eje 34 promediame 
+
+const promedio = (arr) =>{
+var acu = 0
+  for(let i=0; i < arr.length; i++){
+    acu = acu + arr[i]
+  }
+  var resul = acu/arr.length
+  return 'el promedio es: ' + resul
+}
+
+console.log(promedio([1, 2, 3, 4])) // 2.5
+console.log(promedio([7, 8, 9])) // 8
+console.log(promedio([300, 100])) // 200
+
 */
+
+
